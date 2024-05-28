@@ -40,6 +40,7 @@
 		<tr>
 			<td>UTS</td>
 			<td>30%</td>
+			<!-- onekeyup Untuk menangani event keyup-->
 			<td><input onkeyup="calculate()" class="w-full px-2 rounded-md" min="0" max="100" type="number" name="uts" id="uts" placeholder="masukkan nilai"></td>
 		</tr>
 		<tr>
@@ -168,11 +169,11 @@
                 ),
 
                 // update table
-                document.getElementById("nilai-akhir").textContent = (nilaiAkhir*10/10).toString().slice(0, 5),
+                document.getElementById("nilai-akhir").textContent = nilaiAkhir*10/10,
                 document.getElementById("indeks-presentasi").textContent = indeksPrestasi,
                 document.getElementById("keterangan").textContent = keterangan
             );
         }
 	</script>
 </body>
-  </html>
+</html>
